@@ -1,0 +1,14 @@
+server:
+  port: 80
+  servlet:
+    context-path: /iu
+
+spring:
+  servlet:
+    #设置SpringBoot内置tomcat允许上传图片的大小
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 1000MB
+  #路径映射，Ueditor上传图片成功后回显用
+  resources:
+    static-locations: classpath:static/,file:static/,file:E:/
